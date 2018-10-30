@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="457.0" prefWidth="506.0" style="-fx-background-color: #ab8eaf;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unitcovertor.FXMLDocumentController">
+    <children>
+      <RadioButton fx:id="rbtemp" layoutX="42.0" layoutY="271.0" mnemonicParsing="false" onAction="#handleTemperatureRb" selected="true" text="Temperature">
+         <toggleGroup>
+            <ToggleGroup fx:id="unitconversion" />
+         </toggleGroup>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbweight" layoutX="218.0" layoutY="271.0" mnemonicParsing="false" onAction="#handleWeightRb" text="Weight">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbheight" layoutX="357.0" layoutY="271.0" mnemonicParsing="false" onAction="#handleHeightRb" text="Height" toggleGroup="$group">
+         <font>
+            <Font size="16.0" />
+         </font></RadioButton>
+        <Button fx:id="Convert" layoutX="126.0" layoutY="187.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="83.0" text="Convert">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TextField fx:id="textField1" layoutX="126.0" layoutY="23.0" onAction="#handleButtonAction" />
+      <TextField fx:id="textField2" layoutX="126.0" layoutY="105.0" onAction="#handleButtonAction" />
+      <Label fx:id="label1" layoutX="42.0" layoutY="22.0" text="Celsius">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="label2" layoutX="27.0" layoutY="104.0" text="Fahernheit">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="textField3" layoutX="375.0" layoutY="23.0" prefHeight="25.0" prefWidth="89.0" visible="false" />
+      <Label fx:id="label3" layoutX="308.0" layoutY="27.0" text="oz" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="label4" layoutX="94.0" layoutY="291.0" prefHeight="17.0" prefWidth="296.0" />
+      <Button fx:id="btnclear" layoutX="275.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleButtonClear" prefHeight="25.0" prefWidth="67.0" text="Clear">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
